@@ -1,0 +1,1630 @@
+{
+ "tables": [
+  {
+   "name": "Products",
+   "description": "Your stock. One row per product. Add, edit or import your stock here.",
+   "fields": [
+    {
+     "name": "Product Code",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Product Name",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Category",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Ring"
+       },
+       {
+        "name": "Necklace"
+       },
+       {
+        "name": "Earrings"
+       },
+       {
+        "name": "Bracelet"
+       },
+       {
+        "name": "Pendant"
+       },
+       {
+        "name": "Bangle"
+       },
+       {
+        "name": "Other"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Metal Type",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Yellow Gold"
+       },
+       {
+        "name": "White Gold"
+       },
+       {
+        "name": "Rose Gold"
+       },
+       {
+        "name": "Silver"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Purity",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "9"
+       },
+       {
+        "name": "14"
+       },
+       {
+        "name": "18"
+       },
+       {
+        "name": "925"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Gross Weight (g)",
+     "type": "number",
+     "options": {
+      "precision": 3
+     }
+    },
+    {
+     "name": "Net Weight (g)",
+     "type": "number",
+     "options": {
+      "precision": 3
+     }
+    },
+    {
+     "name": "Second Metal",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Second Net Weight (g)",
+     "type": "number",
+     "options": {
+      "precision": 3
+     }
+    },
+    {
+     "name": "Making Type",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "flat"
+       },
+       {
+        "name": "per_gram"
+       },
+       {
+        "name": "pct"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Making Value",
+     "type": "number",
+     "options": {
+      "precision": 2
+     }
+    },
+    {
+     "name": "Stock Qty",
+     "type": "number",
+     "options": {
+      "precision": 0
+     }
+    },
+    {
+     "name": "Sold",
+     "type": "checkbox",
+     "options": {
+      "icon": "check",
+      "color": "greenBright"
+     }
+    },
+    {
+     "name": "Stone 1 Type",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Diamond"
+       },
+       {
+        "name": "Ruby"
+       },
+       {
+        "name": "Emerald"
+       },
+       {
+        "name": "Sapphire"
+       },
+       {
+        "name": "Pearl"
+       },
+       {
+        "name": "Amethyst"
+       },
+       {
+        "name": "Topaz"
+       },
+       {
+        "name": "Opal"
+       },
+       {
+        "name": "Other"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 1 Carats",
+     "type": "number",
+     "options": {
+      "precision": 3
+     }
+    },
+    {
+     "name": "Stone 1 Rate (₹/ct)",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "Stone 1 Shape",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Round Brilliant"
+       },
+       {
+        "name": "Princess"
+       },
+       {
+        "name": "Cushion"
+       },
+       {
+        "name": "Oval"
+       },
+       {
+        "name": "Emerald"
+       },
+       {
+        "name": "Pear"
+       },
+       {
+        "name": "Radiant"
+       },
+       {
+        "name": "Heart"
+       },
+       {
+        "name": "Marquise"
+       },
+       {
+        "name": "Asscher"
+       },
+       {
+        "name": "Trillion"
+       },
+       {
+        "name": "Baguette"
+       },
+       {
+        "name": "Other"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 1 Clarity",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "FL"
+       },
+       {
+        "name": "IF"
+       },
+       {
+        "name": "VVS1"
+       },
+       {
+        "name": "VVS2"
+       },
+       {
+        "name": "VS1"
+       },
+       {
+        "name": "VS2"
+       },
+       {
+        "name": "SI1"
+       },
+       {
+        "name": "SI2"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 1 Colour",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "D"
+       },
+       {
+        "name": "E"
+       },
+       {
+        "name": "F"
+       },
+       {
+        "name": "G"
+       },
+       {
+        "name": "H"
+       },
+       {
+        "name": "I"
+       },
+       {
+        "name": "J"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 1 Cut",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Excellent"
+       },
+       {
+        "name": "Very Good"
+       },
+       {
+        "name": "Good"
+       },
+       {
+        "name": "Fair"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 2 Type",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Diamond"
+       },
+       {
+        "name": "Ruby"
+       },
+       {
+        "name": "Emerald"
+       },
+       {
+        "name": "Sapphire"
+       },
+       {
+        "name": "Pearl"
+       },
+       {
+        "name": "Amethyst"
+       },
+       {
+        "name": "Topaz"
+       },
+       {
+        "name": "Opal"
+       },
+       {
+        "name": "Other"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 2 Carats",
+     "type": "number",
+     "options": {
+      "precision": 3
+     }
+    },
+    {
+     "name": "Stone 2 Rate (₹/ct)",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "Stone 2 Shape",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Round Brilliant"
+       },
+       {
+        "name": "Princess"
+       },
+       {
+        "name": "Cushion"
+       },
+       {
+        "name": "Oval"
+       },
+       {
+        "name": "Emerald"
+       },
+       {
+        "name": "Pear"
+       },
+       {
+        "name": "Radiant"
+       },
+       {
+        "name": "Heart"
+       },
+       {
+        "name": "Marquise"
+       },
+       {
+        "name": "Asscher"
+       },
+       {
+        "name": "Trillion"
+       },
+       {
+        "name": "Baguette"
+       },
+       {
+        "name": "Other"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 2 Clarity",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "FL"
+       },
+       {
+        "name": "IF"
+       },
+       {
+        "name": "VVS1"
+       },
+       {
+        "name": "VVS2"
+       },
+       {
+        "name": "VS1"
+       },
+       {
+        "name": "VS2"
+       },
+       {
+        "name": "SI1"
+       },
+       {
+        "name": "SI2"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 2 Colour",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "D"
+       },
+       {
+        "name": "E"
+       },
+       {
+        "name": "F"
+       },
+       {
+        "name": "G"
+       },
+       {
+        "name": "H"
+       },
+       {
+        "name": "I"
+       },
+       {
+        "name": "J"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 2 Cut",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Excellent"
+       },
+       {
+        "name": "Very Good"
+       },
+       {
+        "name": "Good"
+       },
+       {
+        "name": "Fair"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 3 Type",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Diamond"
+       },
+       {
+        "name": "Ruby"
+       },
+       {
+        "name": "Emerald"
+       },
+       {
+        "name": "Sapphire"
+       },
+       {
+        "name": "Pearl"
+       },
+       {
+        "name": "Amethyst"
+       },
+       {
+        "name": "Topaz"
+       },
+       {
+        "name": "Opal"
+       },
+       {
+        "name": "Other"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 3 Carats",
+     "type": "number",
+     "options": {
+      "precision": 3
+     }
+    },
+    {
+     "name": "Stone 3 Rate (₹/ct)",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "Stone 3 Shape",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Round Brilliant"
+       },
+       {
+        "name": "Princess"
+       },
+       {
+        "name": "Cushion"
+       },
+       {
+        "name": "Oval"
+       },
+       {
+        "name": "Emerald"
+       },
+       {
+        "name": "Pear"
+       },
+       {
+        "name": "Radiant"
+       },
+       {
+        "name": "Heart"
+       },
+       {
+        "name": "Marquise"
+       },
+       {
+        "name": "Asscher"
+       },
+       {
+        "name": "Trillion"
+       },
+       {
+        "name": "Baguette"
+       },
+       {
+        "name": "Other"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 3 Clarity",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "FL"
+       },
+       {
+        "name": "IF"
+       },
+       {
+        "name": "VVS1"
+       },
+       {
+        "name": "VVS2"
+       },
+       {
+        "name": "VS1"
+       },
+       {
+        "name": "VS2"
+       },
+       {
+        "name": "SI1"
+       },
+       {
+        "name": "SI2"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 3 Colour",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "D"
+       },
+       {
+        "name": "E"
+       },
+       {
+        "name": "F"
+       },
+       {
+        "name": "G"
+       },
+       {
+        "name": "H"
+       },
+       {
+        "name": "I"
+       },
+       {
+        "name": "J"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 3 Cut",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Excellent"
+       },
+       {
+        "name": "Very Good"
+       },
+       {
+        "name": "Good"
+       },
+       {
+        "name": "Fair"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 4 Type",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Diamond"
+       },
+       {
+        "name": "Ruby"
+       },
+       {
+        "name": "Emerald"
+       },
+       {
+        "name": "Sapphire"
+       },
+       {
+        "name": "Pearl"
+       },
+       {
+        "name": "Amethyst"
+       },
+       {
+        "name": "Topaz"
+       },
+       {
+        "name": "Opal"
+       },
+       {
+        "name": "Other"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 4 Carats",
+     "type": "number",
+     "options": {
+      "precision": 3
+     }
+    },
+    {
+     "name": "Stone 4 Rate (₹/ct)",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "Stone 4 Shape",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Round Brilliant"
+       },
+       {
+        "name": "Princess"
+       },
+       {
+        "name": "Cushion"
+       },
+       {
+        "name": "Oval"
+       },
+       {
+        "name": "Emerald"
+       },
+       {
+        "name": "Pear"
+       },
+       {
+        "name": "Radiant"
+       },
+       {
+        "name": "Heart"
+       },
+       {
+        "name": "Marquise"
+       },
+       {
+        "name": "Asscher"
+       },
+       {
+        "name": "Trillion"
+       },
+       {
+        "name": "Baguette"
+       },
+       {
+        "name": "Other"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 4 Clarity",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "FL"
+       },
+       {
+        "name": "IF"
+       },
+       {
+        "name": "VVS1"
+       },
+       {
+        "name": "VVS2"
+       },
+       {
+        "name": "VS1"
+       },
+       {
+        "name": "VS2"
+       },
+       {
+        "name": "SI1"
+       },
+       {
+        "name": "SI2"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 4 Colour",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "D"
+       },
+       {
+        "name": "E"
+       },
+       {
+        "name": "F"
+       },
+       {
+        "name": "G"
+       },
+       {
+        "name": "H"
+       },
+       {
+        "name": "I"
+       },
+       {
+        "name": "J"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Stone 4 Cut",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Excellent"
+       },
+       {
+        "name": "Very Good"
+       },
+       {
+        "name": "Good"
+       },
+       {
+        "name": "Fair"
+       }
+      ]
+     }
+    },
+    {
+     "name": "Image",
+     "type": "multipleAttachments"
+    },
+    {
+     "name": "Job No.",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Extra (do not edit)",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "name": "Customers",
+   "description": "Customer list. The dashboard adds customers automatically; you can also add them here.",
+   "fields": [
+    {
+     "name": "Name",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Phone",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Email",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Address",
+     "type": "singleLineText"
+    },
+    {
+     "name": "ID Proof",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Date of Birth",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "Notes",
+     "type": "multilineText"
+    },
+    {
+     "name": "Visits",
+     "type": "number",
+     "options": {
+      "precision": 0
+     }
+    },
+    {
+     "name": "Created",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "Created By",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Customer ID",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Extra (do not edit)",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "name": "Users",
+   "description": "Logins for admins and employees. Passwords live only here and are never sent to the page.",
+   "fields": [
+    {
+     "name": "ID",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Name",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Role",
+     "type": "singleSelect",
+     "options": {
+      "choices": [
+       {
+        "name": "Admin"
+       },
+       {
+        "name": "Employee"
+       }
+      ]
+     }
+    },
+    {
+     "name": "PIN",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Active",
+     "type": "checkbox",
+     "options": {
+      "icon": "check",
+      "color": "greenBright"
+     }
+    },
+    {
+     "name": "Created",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Gold Rates",
+   "description": "One row per day. Type the 24K rate per gram; the dashboard works out the rest.",
+   "fields": [
+    {
+     "name": "Date",
+     "type": "singleLineText"
+    },
+    {
+     "name": "24K per g (₹)",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "Silver per g (₹)",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "18K per g (₹)",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "14K per g (₹)",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "9K per g (₹)",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "Entered By",
+     "type": "singleLineText"
+    }
+   ]
+  },
+  {
+   "name": "Settings",
+   "description": "Shop settings, one row per setting. Also editable in the dashboard’s Settings tab.",
+   "fields": [
+    {
+     "name": "Key",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Value",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "name": "Karigars",
+   "description": "Your karigars (craftsmen).",
+   "fields": [
+    {
+     "name": "Name",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Phone",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Notes",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "name": "Quotations",
+   "description": "Saved quotations.",
+   "fields": [
+    {
+     "name": "Quotation No.",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Date",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "Customer",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Phone",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Staff",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Status",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Total",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "Data",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "name": "Orders",
+   "description": "Custom orders, including karigar issuance.",
+   "fields": [
+    {
+     "name": "Order No.",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Date",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "Customer",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Phone",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Staff",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Status",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Delivery Date",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "Total",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "Advance",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "Karigar",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Data",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "name": "Estimates",
+   "description": "Customer estimates.",
+   "fields": [
+    {
+     "name": "Estimate No.",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Date",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "Customer",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Phone",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Staff",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Status",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Total",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "Data",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "name": "On Approval",
+   "description": "Jewellery out on approval.",
+   "fields": [
+    {
+     "name": "Approval No.",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Date",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "Customer",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Phone",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Staff",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Status",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Deposit",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "Due Back",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Data",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "name": "Receipts",
+   "description": "Material received from customers.",
+   "fields": [
+    {
+     "name": "Receipt No.",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Date",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "Customer",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Phone",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Staff",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Status",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Data",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "name": "Memos",
+   "description": "Pieces issued on memo.",
+   "fields": [
+    {
+     "name": "Memo No.",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Date",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "Customer",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Phone",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Staff",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Status",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Due Date",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "Total",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "Data",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "name": "Material Issues",
+   "description": "Loose stones issued.",
+   "fields": [
+    {
+     "name": "MI No.",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Date",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "Customer",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Phone",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Staff",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Status",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Total",
+     "type": "currency",
+     "options": {
+      "precision": 0,
+      "symbol": "₹"
+     }
+    },
+    {
+     "name": "Data",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "name": "Leaves",
+   "description": "Staff leave records.",
+   "fields": [
+    {
+     "name": "Leave ID",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Employee",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Type",
+     "type": "singleLineText"
+    },
+    {
+     "name": "From",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "To",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "Days",
+     "type": "number",
+     "options": {
+      "precision": 1
+     }
+    },
+    {
+     "name": "Status",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Data",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "name": "Day Close",
+   "description": "End-of-day check by staff.",
+   "fields": [
+    {
+     "name": "Entry",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Date",
+     "type": "date",
+     "options": {
+      "dateFormat": {
+       "name": "iso"
+      }
+     }
+    },
+    {
+     "name": "Employee",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Status",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Data",
+     "type": "multilineText"
+    }
+   ]
+  },
+  {
+   "name": "App Data",
+   "description": "Counters and small items the dashboard keeps. Do not edit.",
+   "fields": [
+    {
+     "name": "Key",
+     "type": "singleLineText"
+    },
+    {
+     "name": "Value",
+     "type": "multilineText"
+    }
+   ]
+  }
+ ],
+ "settings": [
+  {
+   "Key": "Brand Name",
+   "Value": "VIRA EARTH"
+  },
+  {
+   "Key": "Legal Name",
+   "Value": ""
+  },
+  {
+   "Key": "Tagline",
+   "Value": "Lab Grown Diamonds Jewellery"
+  },
+  {
+   "Key": "Address",
+   "Value": ""
+  },
+  {
+   "Key": "Phone",
+   "Value": ""
+  },
+  {
+   "Key": "Email",
+   "Value": ""
+  },
+  {
+   "Key": "Website",
+   "Value": ""
+  },
+  {
+   "Key": "GSTIN",
+   "Value": ""
+  },
+  {
+   "Key": "PAN",
+   "Value": ""
+  },
+  {
+   "Key": "Shop State",
+   "Value": ""
+  },
+  {
+   "Key": "Court City",
+   "Value": ""
+  },
+  {
+   "Key": "Document Prefix",
+   "Value": "VE"
+  },
+  {
+   "Key": "GST %",
+   "Value": "3"
+  },
+  {
+   "Key": "Gram Making Rate (₹/g)",
+   "Value": "1800"
+  },
+  {
+   "Key": "Pricing Method",
+   "Value": "Tunch"
+  },
+  {
+   "Key": "Return Recovery %",
+   "Value": "80"
+  },
+  {
+   "Key": "Exchange Recovery %",
+   "Value": "90"
+  },
+  {
+   "Key": "Default Validity (days)",
+   "Value": "7"
+  },
+  {
+   "Key": "Certification Note",
+   "Value": "All diamonds are lab-grown and certified."
+  },
+  {
+   "Key": "Stone Types",
+   "Value": "Diamond, Ruby, Emerald, Sapphire, Pearl, Amethyst, Topaz, Opal, Other"
+  },
+  {
+   "Key": "Diamond Shapes",
+   "Value": "Round Brilliant, Princess, Cushion, Oval, Emerald, Pear, Radiant, Heart, Marquise, Asscher, Trillion, Old European, Rose Cut, Briolette, Baguette, Flanders"
+  },
+  {
+   "Key": "Diamond Clarities",
+   "Value": "VVS1, VVS2, VS1, VS2, SI1, SI2"
+  },
+  {
+   "Key": "Diamond Colours",
+   "Value": "D, E, F, G, H, I, J"
+  },
+  {
+   "Key": "Order Statuses",
+   "Value": "Order Placed, Processing, Ready, Completed, On Hold, Cancelled"
+  },
+  {
+   "Key": "Payment Modes",
+   "Value": "Cash, Bank Transfer, Cheque, UPI / QR, Card"
+  }
+ ]
+}
